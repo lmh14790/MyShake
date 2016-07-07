@@ -79,6 +79,7 @@ public class MainModleImp implements  MainContract.MainModle,SensorEventListener
                vibrator.vibrate(1000);
                //如果soundPool准备完成播放声音
                if(isPrepare){
+                   //param1 soundPoolid param2,param3左右声道，param4优先级，param5循环次数，param6播放的速率1为正常
                    soundPool.play(id, 1, 1, 0, 0, 1);
                }
            }else{
